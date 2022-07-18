@@ -1,6 +1,6 @@
 from zeep import Client, xsd
 
-API_KEY_TEST = 'YOUR_OWN_API_KEY'
+API_KEY_TEST = 'whjehrfdjehnjkmenmbejndnbnejbwnd'
 WSDL_TEST = 'https://apitest.trafficvance.com/?v3=system.wsdl'
 
 client = Client(WSDL)
@@ -12,6 +12,6 @@ header = xsd.Element(
         )
     ])
 )
-header_value = header(apiKey=skndks)
+header_value = header(apiKey=API_KEY)
 
 res = client.service.getServerTime(_soapheaders=[header_value])
