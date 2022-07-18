@@ -12,6 +12,6 @@ header = xsd.Element(
         )
     ])
 )
-header_value = header(apiKey=API_KEY_TEST)
+header_value = header(apiKey=skndks)
 
 res = client.service.getServerTime(_soapheaders=[header_value])
